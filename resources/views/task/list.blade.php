@@ -4,7 +4,7 @@
 @section('title')(詳細画面)@endsection
 
 {{-- メインコンテンツ --}}
-@section('contes')
+@section('contets')
 		<h1>タスクの登録(未実装)</h1>
 			<form action="./top.html" method="post">
 				タスク名：<input><br>
@@ -65,6 +65,6 @@
 		<br>
 		<hr>
 		<menu label="リンク">
-			<a href="./index.html">ログアウト(未実装)</a>
+			<a href="/logout">ログアウト</a><br>
 		</menu>
 @endsection
