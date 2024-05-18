@@ -50,9 +50,9 @@ class AuthController extends Controller
      */
     public function logout(Request $request)
     {
-        Auth::logout();
+        Auth::guard('admin')->logout();
         $request->session()->regenerateToken();  // CSRFトークンの再生成
         $request->session()->regenerate();  // セッションIDの再生成
-        return redirect(route('front.index'));
+        return redirect(route('admin.index'));
     }
 }
