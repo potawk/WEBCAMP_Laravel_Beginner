@@ -13,7 +13,7 @@ class Task extends Model
      * 複数代入不可能な属性
      */
     protected $guarded = ['id'];
-    
+
     /**
      * 「重要度」用の定数
      */
@@ -22,7 +22,7 @@ class Task extends Model
         2 => '普通',
         3 => '高い',
     ];
-    
+
     /**
      * 重要度の文字列を取得する
      */
@@ -30,4 +30,5 @@ class Task extends Model
     {
         return $this::PRIORITY_VALUE[ $this->priority ] ?? '';
     }
+
 }
